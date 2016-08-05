@@ -43,6 +43,10 @@
 			<arg name="name" value="base_laser_rear" />
 		</include>
 
+		<include file="$(find cob_bringup)/drivers/phidgets.launch" >
+			<arg name="robot" value="$(arg robot)" />
+		</include>
+
 		<include file="$(find cob_bringup)/drivers/battery_voltage.launch" >
                         <arg name="robot" value="$(arg robot)" />
                 </include>
